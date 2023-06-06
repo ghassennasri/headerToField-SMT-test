@@ -10,9 +10,10 @@ import org.apache.kafka.common.header.internals.RecordHeader;
 import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Properties;
+import java.util.concurrent.ExecutionException;
 
 public class JsonSchemaProducer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         // Create the Properties class to instantiate the Producer with the required configuration.
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:29092");
@@ -35,7 +36,7 @@ public class JsonSchemaProducer {
         ProducerRecord<String, TestObject> record = new ProducerRecord<String, TestObject>(topic, null,key, recordValue, Collections.singletonList(header));
 
         // Send the data to the specified topic.
-        producer.send(record);
+        producer.send(record).get();
 
         // Close the producer to free resources.
         producer.close();
