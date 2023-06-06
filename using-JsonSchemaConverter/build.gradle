@@ -1,0 +1,65 @@
+plugins {
+    id 'java'
+    id 'application'
+    //id 'com.alexvasilkov.git-dependencies' version '2.0.4'
+}
+application {
+    mainClass = 'JsonSchemaProducer'
+}
+mainClassName = 'JsonSchemaProducer'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+    maven { url 'https://jitpack.io' }
+    maven {
+        url "https://packages.confluent.io/maven/"
+    }
+}
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'org.apache.kafka', name: 'connect-api', version: '3.0.0'
+    implementation 'com.github.jcustenborder.connect-utils:connect-utils:0.7.177'
+    //implementation 'com.github.jcustenborder:kafka-connect-parent:3.3.1-1'
+    implementation 'io.confluent:kafka-json-schema-serializer:6.2.0'  // replace with your version
+    // other dependencies
+
+        //implementation 'com.github.jcustenborder:kafka-connect-transform-common:0.1.0.58'
+
+    // https://mvnrepository.com/artifact/com.github.jcustenborder.kafka.connect/kafka-connect-transform-common
+    //implementation group: 'com.github.jcustenborder.kafka.connect', name: 'kafka-connect-transform-common', version: '0.1.0.58'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.19.0'
+
+    /// https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.19.0'
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.19.0'
+// https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7'
+}
+jar {
+    manifest {
+        attributes "Main-Class": "JsonSchemaProducer"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    exclude 'META-INF/*.RSA'
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.DSA'
+    exclude 'LICENSE'
+    exclude 'NOTICE'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+test {
+    useJUnitPlatform()
+}

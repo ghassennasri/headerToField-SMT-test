@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: kotlin-scripting-jvm
+Implementation-Version: 1.3.50-release-112 (1.3.50)
+Implementation-Vendor: JetBrains
+

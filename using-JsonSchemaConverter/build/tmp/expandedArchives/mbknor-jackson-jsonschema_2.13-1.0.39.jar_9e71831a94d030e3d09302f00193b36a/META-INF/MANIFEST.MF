@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: mbknor-jackson-jsonSchema
+Automatic-Module-Name: mbknor.jackson.jsonschema
+Implementation-Version: 1.0.39
+Specification-Vendor: mbknor
+Specification-Title: mbknor-jackson-jsonSchema
+Implementation-Vendor-Id: com.kjetland
+Specification-Version: 1.0.39
+Implementation-URL: https://github.com/mbknor/mbknor-jackson-jsonSchem
+ a
+Vcs-Release-Tag: v1.0.39
+Implementation-Vendor: mbknor
+Vcs-Release-Hash: 9f9e503339d5cca71d0c78bf5f960176861f3754
+

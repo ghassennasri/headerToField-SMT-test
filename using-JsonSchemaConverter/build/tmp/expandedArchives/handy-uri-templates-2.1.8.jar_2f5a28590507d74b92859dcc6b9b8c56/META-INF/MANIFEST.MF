@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.damnhandy.uri.template
+Bnd-LastModified: 1558834247596
+Build-Jdk: 11.0.3
+Built-By: ryan
+Bundle-Description: Handy URI Templates is a RFC6570 compliant URI tem
+ plate processor. The library allows clients to        utilize templat
+ ized URIs and inject replacement variables to expand the template int
+ o a URI. The library sports        a fluent API, ability to plugin cu
+ stom object renderers, and supports all levels of URI templates.
+Bundle-DocURL: https://github.com/damnhandy/Handy-URI-Templates
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: handy-uri-templates
+Bundle-SymbolicName: com.damnhandy.handy-uri-templates
+Bundle-Vendor: Ryan J. McDonough
+Bundle-Version: 2.1.8
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.damnhandy.uri.template;version="2.1.8",com.damnhan
+ dy.uri.template.jackson.datatype;uses:="com.damnhandy.uri.template,co
+ m.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml
+ .jackson.databind.module";version="2.1.8"
+Import-Package: com.fasterxml.jackson.core;version="[2.9,3)";resolutio
+ n:=optional,com.fasterxml.jackson.databind;version="[2.9,3)";resoluti
+ on:=optional,com.fasterxml.jackson.databind.module;version="[2.9,3)";
+ resolution:=optional,org.joda.time;version="[2.10,3)",org.joda.time.f
+ ormat;version="[2.10,3)"
+key: value
+mode: development
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-4.2.0.201903051501
+url: https://github.com/damnhandy/Handy-URI-Templates
+

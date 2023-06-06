@@ -1,0 +1,46 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven Bundle Plugin
+Built-By: luke
+Build-Jdk: 11.0.2
+Specification-Title: ClassGraph
+Specification-Version: 4.8.21
+Implementation-Title: ClassGraph
+Implementation-Version: 4.8.21
+Implementation-Vendor-Id: io.github.classgraph
+Implementation-URL: https://github.com/classgraph/classgraph
+Bnd-LastModified: 1553396865657
+Bundle-Category: Utilities
+Bundle-Description: The uber-fast, ultra-lightweight classpath and modul
+ e scanner for JVM languages.
+Bundle-License: http://opensource.org/licenses/MIT
+Bundle-ManifestVersion: 2
+Bundle-Name: ClassGraph
+Bundle-SymbolicName: io.github.classgraph.classgraph
+Bundle-Vendor: Luke Hutchison
+Bundle-Version: 4.8.21
+Export-Package: io.github.classgraph;version="4.8.21",nonapi.io.github.c
+ lassgraph.classpath;uses:="io.github.classgraph,nonapi.io.github.classg
+ raph,nonapi.io.github.classgraph.classloaderhandler,nonapi.io.github.cl
+ assgraph.utils";version="4.8.21",nonapi.io.github.classgraph;uses:="io.
+ github.classgraph,nonapi.io.github.classgraph.utils";version="4.8.21",n
+ onapi.io.github.classgraph.types;version="4.8.21",nonapi.io.github.clas
+ sgraph.classloaderhandler;uses:="nonapi.io.github.classgraph,nonapi.io.
+ github.classgraph.classpath,nonapi.io.github.classgraph.utils";version=
+ "4.8.21",nonapi.io.github.classgraph.fastzipfilereader;uses:="io.github
+ .classgraph,nonapi.io.github.classgraph,nonapi.io.github.classgraph.con
+ currency,nonapi.io.github.classgraph.recycler,nonapi.io.github.classgra
+ ph.utils";version="4.8.21",nonapi.io.github.classgraph.json;version="4.
+ 8.21",nonapi.io.github.classgraph.utils;version="4.8.21",nonapi.io.gith
+ ub.classgraph.recycler;version="4.8.21",nonapi.io.github.classgraph.con
+ currency;uses:="nonapi.io.github.classgraph.utils";version="4.8.21"
+Import-Package: io.github.classgraph,javax.xml.namespace,javax.xml.parse
+ rs,javax.xml.xpath,nonapi.io.github.classgraph,nonapi.io.github.classgr
+ aph.classloaderhandler,nonapi.io.github.classgraph.classpath,nonapi.io.
+ github.classgraph.concurrency,nonapi.io.github.classgraph.fastzipfilere
+ ader,nonapi.io.github.classgraph.json,nonapi.io.github.classgraph.recyc
+ ler,nonapi.io.github.classgraph.types,nonapi.io.github.classgraph.utils
+ ,org.w3c.dom
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-4.1.0.201810181252
+Multi-Release: true
+

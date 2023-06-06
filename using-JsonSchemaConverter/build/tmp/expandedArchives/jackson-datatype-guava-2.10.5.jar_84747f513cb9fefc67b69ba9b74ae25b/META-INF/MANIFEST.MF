@@ -1,0 +1,89 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1595303309166
+Build-Jdk: 1.8.0_162
+Built-By: tatu
+Bundle-Description: Add-on datatype-support module for Jackson (https:
+ //github.com/FasterXML/jackson) that handlesGuava (http://code.google
+ .com/p/guava-libraries/) types (currently mostly just collection ones
+ )
+Bundle-DocURL: https://github.com/FasterXML/jackson-datatypes-collecti
+ ons
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Jackson datatype: Guava
+Bundle-SymbolicName: com.fasterxml.jackson.datatype.jackson-datatype-g
+ uava
+Bundle-Vendor: FasterXML
+Bundle-Version: 2.10.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.fasterxml.jackson.datatype.guava;version="2.10.5";
+ uses:="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.
+ fasterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsont
+ ype,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind
+ .type,com.google.common.collect",com.fasterxml.jackson.datatype.guava
+ .deser;version="2.10.5";uses:="com.fasterxml.jackson.core,com.fasterx
+ ml.jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxm
+ l.jackson.databind.deser.std,com.fasterxml.jackson.databind.jsontype,
+ com.fasterxml.jackson.databind.util,com.fasterxml.jackson.datatype.gu
+ ava.deser.util,com.google.common.base,com.google.common.collect,com.g
+ oogle.common.hash,com.google.common.net",com.fasterxml.jackson.dataty
+ pe.guava.deser.multimap;version="2.10.5";uses:="com.fasterxml.jackson
+ .core,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.d
+ eser,com.fasterxml.jackson.databind.deser.std,com.fasterxml.jackson.d
+ atabind.jsontype,com.fasterxml.jackson.databind.type,com.google.commo
+ n.collect",com.fasterxml.jackson.datatype.guava.deser.multimap.list;v
+ ersion="2.10.5";uses:="com.fasterxml.jackson.databind,com.fasterxml.j
+ ackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fas
+ terxml.jackson.databind.type,com.fasterxml.jackson.datatype.guava.des
+ er.multimap,com.google.common.collect",com.fasterxml.jackson.datatype
+ .guava.deser.multimap.set;version="2.10.5";uses:="com.fasterxml.jacks
+ on.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jackso
+ n.databind.jsontype,com.fasterxml.jackson.databind.type,com.fasterxml
+ .jackson.datatype.guava.deser.multimap,com.google.common.collect",com
+ .fasterxml.jackson.datatype.guava.deser.util;version="2.10.5";uses:="
+ com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,com
+ .google.common.collect",com.fasterxml.jackson.datatype.guava.ser;vers
+ ion="2.10.5";uses:="com.fasterxml.jackson.core,com.fasterxml.jackson.
+ core.io,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind
+ .jsonFormatVisitors,com.fasterxml.jackson.databind.jsontype,com.faste
+ rxml.jackson.databind.ser,com.fasterxml.jackson.databind.ser.impl,com
+ .fasterxml.jackson.databind.ser.std,com.fasterxml.jackson.databind.ty
+ pe,com.fasterxml.jackson.databind.util,com.fasterxml.jackson.datatype
+ .guava.deser.util,com.google.common.base,com.google.common.collect"
+Implementation-Build-Date: 2020-07-21 03:48:08+0000
+Implementation-Title: Jackson datatype: Guava
+Implementation-Vendor: FasterXML
+Implementation-Vendor-Id: com.fasterxml.jackson.datatype
+Implementation-Version: 2.10.5
+Import-Package: com.google.common.base;version="[20.0.0,28)",com.googl
+ e.common.cache;version="[20.0.0,28)",com.google.common.collect;versio
+ n="[20.0.0,28)",com.google.common.hash;version="[20.0.0,28)",com.goog
+ le.common.net;version="[20.0.0,28)",com.fasterxml.jackson.annotation;
+ version="[2.10,3)",com.fasterxml.jackson.core;version="[2.10,3)",com.
+ fasterxml.jackson.core.io;version="[2.10,3)",com.fasterxml.jackson.co
+ re.type;version="[2.10,3)",com.fasterxml.jackson.core.util;version="[
+ 2.10,3)",com.fasterxml.jackson.databind;version="[2.10,3)",com.faster
+ xml.jackson.databind.cfg;version="[2.10,3)",com.fasterxml.jackson.dat
+ abind.deser;version="[2.10,3)",com.fasterxml.jackson.databind.deser.i
+ mpl;version="[2.10,3)",com.fasterxml.jackson.databind.deser.std;versi
+ on="[2.10,3)",com.fasterxml.jackson.databind.introspect;version="[2.1
+ 0,3)",com.fasterxml.jackson.databind.jsonFormatVisitors;version="[2.1
+ 0,3)",com.fasterxml.jackson.databind.jsontype;version="[2.10,3)",com.
+ fasterxml.jackson.databind.ser;version="[2.10,3)",com.fasterxml.jacks
+ on.databind.ser.impl;version="[2.10,3)",com.fasterxml.jackson.databin
+ d.ser.std;version="[2.10,3)",com.fasterxml.jackson.databind.type;vers
+ ion="[2.10,3)",com.fasterxml.jackson.databind.util;version="[2.10,3)"
+ ,com.fasterxml.jackson.datatype.guava.deser;version="[2.10,3)",com.fa
+ sterxml.jackson.datatype.guava.deser.multimap;version="[2.10,3)",com.
+ fasterxml.jackson.datatype.guava.deser.multimap.list;version="[2.10,3
+ )",com.fasterxml.jackson.datatype.guava.deser.multimap.set;version="[
+ 2.10,3)",com.fasterxml.jackson.datatype.guava.deser.util;version="[2.
+ 10,3)",com.fasterxml.jackson.datatype.guava.ser;version="[2.10,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Specification-Title: Jackson datatype: Guava
+Specification-Vendor: FasterXML
+Specification-Version: 2.10.5
+Tool: Bnd-4.2.0.201903051501
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7
+

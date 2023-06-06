@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Commit-ID: 4cbf07a513f3a2fe999088abb5a74d544707c906
+Build-Jdk-Spec: 1.8
+Created-By: Maven Jar Plugin 3.2.0
+
